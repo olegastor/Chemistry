@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="by.znaj.rogachev2.chemistry">
+    package="by.znaj.rogachev2.chemistry" >
 
     <application
         android:allowBackup="true"
@@ -8,15 +8,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".TestResActivity"></activity>
+        android:theme="@style/AppTheme" >
+        <activity android:name=".CoefActivity" >
+        </activity>
+        <activity android:name=".TestResActivity" />
         <activity android:name=".TestBaseActivity" />
         <activity android:name=".TestSaltActivity" />
         <activity android:name=".TestAcid3Activity" />
         <activity android:name=".TestAcid2Activity" />
         <activity android:name=".TestAcidActivity" />
         <activity android:name=".TestActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

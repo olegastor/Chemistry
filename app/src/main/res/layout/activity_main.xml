@@ -8,6 +8,13 @@
 
 
     <Button
+        android:id="@+id/coefButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Уравнения химических реакций"
+        />
+    <Button
         android:id="@+id/testButton"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"

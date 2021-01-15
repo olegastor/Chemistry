@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Химия</string>
     <string name="app_name_short">Химия</string>
+
+    <string name="str_description">Укажите тип данной реакции</string>
+    <string name="str_next">Продолжить</string>
+    <string name="str_exit">Выход</string>
+
+    <string name="str_soed">Реакция соединения</string>
+    <string name="str_razl">Реакция разложения</string>
+    <string name="str_zam">Реакция замещения</string>
+    <string name="str_obm">Реакция обмена</string>
 </resources>

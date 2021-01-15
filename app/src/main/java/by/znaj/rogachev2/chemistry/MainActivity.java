@@ -1,8 +1,9 @@
 package by.znaj.rogachev2.chemistry;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.baseButton).setOnClickListener(this);
 
         findViewById(R.id.testButton).setOnClickListener(this);
+        findViewById(R.id.coefButton).setOnClickListener(this);
 
         sqlHelper = new DatabaseHelper(this);
         sqlHelper.createDatabase();
@@ -72,6 +74,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.testButton: {
                 Intent intent = new Intent(getApplicationContext(), TestResActivity.class);
+                startActivity(intent);
+                //overridePendingTransition(R.anim.right_in, R.anim.left_out);
+                break;
+            }
+            case R.id.coefButton: {
+                Intent intent = new Intent(getApplicationContext(), CoefActivity.class);
                 startActivity(intent);
                 //overridePendingTransition(R.anim.right_in, R.anim.left_out);
                 break;
